@@ -4,6 +4,7 @@ import com.imigishalink.categories.Category;
 import com.imigishalink.categories.CategoryRepository;
 import com.imigishalink.location.Location;
 import com.imigishalink.location.LocationRepository;
+import com.imigishalink.location.RwandaLocationData;
 import com.imigishalink.users.Role;
 import com.imigishalink.users.User;
 import com.imigishalink.users.UserRepository;
@@ -13,9 +14,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 @Service
 @RequiredArgsConstructor
@@ -145,6 +144,157 @@ public class NGOSeederService {
         user.setActive(true);
         user.setCreatedAt(LocalDateTime.now());
         return userRepository.save(user);
+    }
+    
+    /**
+     * Assign locations to all existing NGOs that don't have locations,
+     * or reassign locations to all NGOs to distribute them across Rwanda.
+     * Uses the Rwandan administrative structure from RwandaLocationData to ensure
+     * proper distribution across provinces, districts, and sectors.
+     */
+    @Transactional
+    public int assignLocationsToNGOs(boolean reassignAll) {
+        log.info("Starting to assign locations to NGOs using Rwandan structure (reassignAll: {})...", reassignAll);
+        
+        // Get all NGOs
+        List<NGO> ngos = ngoRepository.findAll();
+        if (ngos.isEmpty()) {
+            log.warn("No NGOs found to assign locations");
+            return 0;
+        }
+        
+        // Filter NGOs that need locations
+        List<NGO> ngosToUpdate = new ArrayList<>();
+        if (reassignAll) {
+            ngosToUpdate = ngos;
+            log.info("Reassigning locations to all {} NGOs", ngos.size());
+        } else {
+            for (NGO ngo : ngos) {
+                if (ngo.getHeadOfficeLocation() == null) {
+                    ngosToUpdate.add(ngo);
+                }
+            }
+            log.info("Assigning locations to {} NGOs without locations (out of {})", 
+                    ngosToUpdate.size(), ngos.size());
+        }
+        
+        if (ngosToUpdate.isEmpty()) {
+            log.info("All NGOs already have locations assigned");
+            return 0;
+        }
+        
+        // Use Rwandan administrative structure to get locations
+        List<String> provinces = RwandaLocationData.getProvinces();
+        Map<String, List<String>> districtsByProvince = RwandaLocationData.getDistrictsByProvince();
+        Map<String, List<String>> sectorsByDistrict = RwandaLocationData.getSectorsByDistrict();
+        Map<String, List<String>> cellsBySector = RwandaLocationData.getCellsBySector();
+        Map<String, List<String>> villagesByCell = RwandaLocationData.getVillagesByCell();
+        
+        // Build a list of all sector-level locations (sectors are the primary location identifier)
+        List<LocationInfo> sectorLocations = new ArrayList<>();
+        
+        for (String province : provinces) {
+            List<String> districts = districtsByProvince.getOrDefault(province, new ArrayList<>());
+            for (String district : districts) {
+                List<String> sectors = sectorsByDistrict.getOrDefault(district, new ArrayList<>());
+                for (String sector : sectors) {
+                    // Get first cell and village if available, otherwise use null
+                    List<String> cells = cellsBySector.getOrDefault(sector, new ArrayList<>());
+                    String cell = cells.isEmpty() ? null : cells.get(0);
+                    
+                    String village = null;
+                    if (cell != null) {
+                        List<String> villages = villagesByCell.getOrDefault(cell, new ArrayList<>());
+                        village = villages.isEmpty() ? null : villages.get(0);
+                    }
+                    
+                    sectorLocations.add(new LocationInfo(province, district, sector, cell, village));
+                }
+            }
+        }
+        
+        if (sectorLocations.isEmpty()) {
+            log.warn("No sector locations found in Rwandan structure");
+            return 0;
+        }
+        
+        log.info("Found {} sector locations from Rwandan structure to distribute among {} NGOs", 
+                sectorLocations.size(), ngosToUpdate.size());
+        
+        // Find or create locations in database and assign to NGOs
+        int updatedCount = 0;
+        int locationIndex = 0;
+        
+        for (NGO ngo : ngosToUpdate) {
+            // Cycle through sector locations to ensure even distribution
+            LocationInfo locationInfo = sectorLocations.get(locationIndex % sectorLocations.size());
+            
+            // Find or create the location in database
+            Location location = findOrCreateLocation(
+                    locationInfo.province,
+                    locationInfo.district,
+                    locationInfo.sector,
+                    locationInfo.cell,
+                    locationInfo.village
+            );
+            
+            ngo.setHeadOfficeLocation(location);
+            ngoRepository.save(ngo);
+            locationIndex++;
+            updatedCount++;
+            
+            if (updatedCount % 10 == 0) {
+                log.info("Assigned locations to {}/{} NGOs", updatedCount, ngosToUpdate.size());
+            }
+        }
+        
+        log.info("Successfully assigned locations to {} NGOs using Rwandan administrative structure", updatedCount);
+        return updatedCount;
+    }
+    
+    /**
+     * Find existing location or create a new one if it doesn't exist
+     */
+    private Location findOrCreateLocation(String province, String district, String sector, String cell, String village) {
+        // Try to find existing location
+        Optional<Location> existing = locationRepository.findByProvinceAndDistrictAndSectorAndCellAndVillage(
+                province, district, sector, cell, village);
+        
+        if (existing.isPresent()) {
+            return existing.get();
+        }
+        
+        // Create new location if not found
+        Location location = new Location();
+        location.setCountry("Rwanda");
+        location.setProvince(province);
+        location.setDistrict(district);
+        location.setSector(sector);
+        location.setCell(cell);
+        location.setVillage(village);
+        location.setCreatedAt(LocalDateTime.now());
+        location.setActive(true);
+        
+        return locationRepository.save(location);
+    }
+    
+    /**
+     * Helper class to hold location information
+     */
+    private static class LocationInfo {
+        final String province;
+        final String district;
+        final String sector;
+        final String cell;
+        final String village;
+        
+        LocationInfo(String province, String district, String sector, String cell, String village) {
+            this.province = province;
+            this.district = district;
+            this.sector = sector;
+            this.cell = cell;
+            this.village = village;
+        }
     }
 }
 

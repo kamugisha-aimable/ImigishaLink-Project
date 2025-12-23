@@ -30,12 +30,27 @@ public interface LocationRepository extends JpaRepository<Location, Long> {
     @Query("SELECT DISTINCT l.district FROM Location l WHERE l.province = :province ORDER BY l.district")
     List<String> findDistrictsByProvince(@Param("province") String province);
     
+    // Find sectors by district, ensuring they belong to the specified province
+    @Query("SELECT DISTINCT l.sector FROM Location l WHERE l.district = :district AND l.province = :province ORDER BY l.sector")
+    List<String> findSectorsByDistrictAndProvince(@Param("district") String district, @Param("province") String province);
+    
+    // Find sectors by district (backward compatibility)
     @Query("SELECT DISTINCT l.sector FROM Location l WHERE l.district = :district ORDER BY l.sector")
     List<String> findSectorsByDistrict(@Param("district") String district);
     
+    // Find cells by sector, ensuring they belong to the specified district and province
+    @Query("SELECT DISTINCT l.cell FROM Location l WHERE l.sector = :sector AND l.district = :district AND l.province = :province ORDER BY l.cell")
+    List<String> findCellsBySectorDistrictAndProvince(@Param("sector") String sector, @Param("district") String district, @Param("province") String province);
+    
+    // Find cells by sector (backward compatibility)
     @Query("SELECT DISTINCT l.cell FROM Location l WHERE l.sector = :sector ORDER BY l.cell")
     List<String> findCellsBySector(@Param("sector") String sector);
     
+    // Find villages by cell, ensuring they belong to the specified sector, district, and province
+    @Query("SELECT DISTINCT l.village FROM Location l WHERE l.cell = :cell AND l.sector = :sector AND l.district = :district AND l.province = :province ORDER BY l.village")
+    List<String> findVillagesByCellSectorDistrictAndProvince(@Param("cell") String cell, @Param("sector") String sector, @Param("district") String district, @Param("province") String province);
+    
+    // Find villages by cell (backward compatibility)
     @Query("SELECT DISTINCT l.village FROM Location l WHERE l.cell = :cell ORDER BY l.village")
     List<String> findVillagesByCell(@Param("cell") String cell);
     

@@ -2,11 +2,13 @@ package com.imigishalink.search;
 
 import com.imigishalink.common.ApiResponse;
 import com.imigishalink.common.PageResponse;
+import com.imigishalink.users.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
@@ -21,12 +23,13 @@ public class SearchController {
     
     @GetMapping("/all")
     public ResponseEntity<ApiResponse<SearchService.SearchResult>> searchAll(
+            @AuthenticationPrincipal User currentUser,
             @RequestParam String query,
             @RequestParam(defaultValue = "0") int page,
             @RequestParam(defaultValue = "5") int size) {
         
         Pageable pageable = PageRequest.of(page, size, Sort.by("createdAt").descending());
-        SearchService.SearchResult result = searchService.searchAll(query, pageable);
+        SearchService.SearchResult result = searchService.searchAll(query, pageable, currentUser);
         
         return ResponseEntity.ok(ApiResponse.success(result));
     }
@@ -123,9 +126,10 @@ public class SearchController {
     
     @GetMapping("/suggestions")
     public ResponseEntity<ApiResponse<SearchService.SearchSuggestions>> getSearchSuggestions(
+            @AuthenticationPrincipal User currentUser,
             @RequestParam String query) {
         
-        SearchService.SearchSuggestions suggestions = searchService.getSearchSuggestions(query);
+        SearchService.SearchSuggestions suggestions = searchService.getSearchSuggestions(query, currentUser);
         return ResponseEntity.ok(ApiResponse.success("Search suggestions", suggestions));
     }
     

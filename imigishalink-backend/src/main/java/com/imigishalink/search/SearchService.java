@@ -41,32 +41,56 @@ public class SearchService {
     private final LocationRepository locationRepository;
     
     /**
-     * Comprehensive search across all entities
+     * Comprehensive search across all entities with role-based filtering
      */
-    public SearchResult searchAll(String query, Pageable pageable) {
+    public SearchResult searchAll(String query, Pageable pageable, User currentUser) {
         SearchResult result = new SearchResult();
         
-        // Search users
-        Page<User> users = userRepository.searchUsers(query, pageable);
+        // Determine user role and filter accordingly
+        boolean isAdmin = currentUser != null && currentUser.getRole() == com.imigishalink.users.Role.ADMIN;
+        Long currentUserId = currentUser != null ? currentUser.getId() : null;
+        
+        // Search users - filter based on role
+        Page<User> users;
+        if (isAdmin) {
+            // Admin sees all users including other admins
+            users = userRepository.searchUsers(query, pageable);
+        } else if (currentUserId != null) {
+            // Regular users: exclude ADMIN users and show only their own info
+            users = userRepository.searchUsersExcludingAdmins(query, currentUserId, pageable);
+        } else {
+            // Not logged in: exclude ADMIN users
+            users = userRepository.searchUsersExcludingAdmins(query, null, pageable);
+        }
         result.setUsers(users);
         
-        // Search NGOs
+        // Search NGOs - all users can see NGOs
         Page<NGO> ngos = ngoRepository.searchNgos(query, pageable);
         result.setNgos(ngos);
         
-        // Search donations
-        Page<Donation> donations = donationRepository.searchDonations(query, pageable);
+        // Search donations - filter based on role
+        Page<Donation> donations;
+        if (isAdmin) {
+            // Admin sees all donations
+            donations = donationRepository.searchDonations(query, pageable);
+        } else if (currentUserId != null) {
+            // Regular users see only their own donations
+            donations = donationRepository.searchDonationsByUser(query, currentUserId, pageable);
+        } else {
+            // Not logged in: show all public donations (OPEN status)
+            donations = donationRepository.searchDonations(query, pageable);
+        }
         result.setDonations(donations);
         
-        // Search communities
+        // Search communities - all users can see communities
         Page<Community> communities = communityRepository.searchCommunities(query, pageable);
         result.setCommunities(communities);
         
-        // Search categories
+        // Search categories - all users can see categories
         Page<Category> categories = categoryRepository.searchCategories(query, pageable);
         result.setCategories(categories);
         
-        // Search locations
+        // Search locations - all users can see locations
         Page<Location> locations = locationRepository.searchLocations(query, pageable);
         result.setLocations(locations);
         
@@ -234,9 +258,9 @@ public class SearchService {
     }
     
     /**
-     * Get search suggestions/autocomplete
+     * Get search suggestions/autocomplete with role-based filtering
      */
-    public SearchSuggestions getSearchSuggestions(String query) {
+    public SearchSuggestions getSearchSuggestions(String query, User currentUser) {
         SearchSuggestions suggestions = new SearchSuggestions();
         
         if (query == null || query.trim().isEmpty()) {
@@ -244,20 +268,42 @@ public class SearchService {
         }
         
         String searchTerm = query.toLowerCase();
+        boolean isAdmin = currentUser != null && currentUser.getRole() == Role.ADMIN;
+        Long currentUserId = currentUser != null ? currentUser.getId() : null;
         
-        // Get user suggestions
+        // Get user suggestions - filter based on role
         Pageable userPageable = PageRequest.of(0, 5, Sort.by("firstName").ascending());
-        Page<User> userSuggestions = userRepository.searchUsers(searchTerm, userPageable);
+        Page<User> userSuggestions;
+        if (isAdmin) {
+            // Admin sees all users including other admins
+            userSuggestions = userRepository.searchUsers(searchTerm, userPageable);
+        } else if (currentUserId != null) {
+            // Regular users: exclude ADMIN users and show only their own info
+            userSuggestions = userRepository.searchUsersExcludingAdmins(searchTerm, currentUserId, userPageable);
+        } else {
+            // Not logged in: exclude ADMIN users
+            userSuggestions = userRepository.searchUsersExcludingAdmins(searchTerm, null, userPageable);
+        }
         suggestions.setUsers(userSuggestions.getContent());
         
-        // Get NGO suggestions
+        // Get NGO suggestions - all users can see NGOs
         Pageable ngoPageable = PageRequest.of(0, 5, Sort.by("name").ascending());
         Page<NGO> ngoSuggestions = ngoRepository.searchNgos(searchTerm, ngoPageable);
         suggestions.setNgos(ngoSuggestions.getContent());
         
-        // Get donation suggestions
+        // Get donation suggestions - filter based on role
         Pageable donationPageable = PageRequest.of(0, 5, Sort.by("title").ascending());
-        Page<Donation> donationSuggestions = donationRepository.searchDonations(searchTerm, donationPageable);
+        Page<Donation> donationSuggestions;
+        if (isAdmin) {
+            // Admin sees all donations
+            donationSuggestions = donationRepository.searchDonations(searchTerm, donationPageable);
+        } else if (currentUserId != null) {
+            // Regular users see only their own donations
+            donationSuggestions = donationRepository.searchDonationsByUser(searchTerm, currentUserId, donationPageable);
+        } else {
+            // Not logged in: show all public donations
+            donationSuggestions = donationRepository.searchDonations(searchTerm, donationPageable);
+        }
         suggestions.setDonations(donationSuggestions.getContent());
         
         // Get community suggestions

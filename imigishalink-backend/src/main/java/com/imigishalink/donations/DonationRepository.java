@@ -6,6 +6,7 @@ import org.springframework.data.jpa.repository.EntityGraph;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
+import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Repository;
 
 import java.time.LocalDate;
@@ -17,6 +18,12 @@ public interface DonationRepository extends JpaRepository<Donation, Long> {
     @EntityGraph(attributePaths = {"createdBy", "ngo", "location", "categories"})
     @Query("SELECT d FROM Donation d WHERE d.id = :id")
     java.util.Optional<Donation> findByIdWithAssociations(@Param("id") Long id);
+    
+    // Override findAll to use EntityGraph for eager loading
+    @EntityGraph(attributePaths = {"createdBy", "ngo", "location", "categories"})
+    @Override
+    @NonNull
+    Page<Donation> findAll(@NonNull Pageable pageable);
     
     @EntityGraph(attributePaths = {"createdBy", "ngo", "location", "categories"})
     Page<Donation> findByStatus(DonationStatus status, Pageable pageable);
@@ -31,8 +38,10 @@ public interface DonationRepository extends JpaRepository<Donation, Long> {
     @Query("SELECT d FROM Donation d WHERE d.createdBy.id = :userId AND d.status = :status")
     Page<Donation> findByCreatedByIdAndStatus(@Param("userId") Long userId, @Param("status") DonationStatus status, Pageable pageable);
     
+    @EntityGraph(attributePaths = {"createdBy", "ngo", "location", "categories"})
     Page<Donation> findByNgoId(Long ngoId, Pageable pageable);
     
+    @EntityGraph(attributePaths = {"createdBy", "ngo", "location", "categories"})
     Page<Donation> findByLocationId(Long locationId, Pageable pageable);
     
     @EntityGraph(attributePaths = {"createdBy", "ngo", "location", "categories"})
@@ -52,6 +61,16 @@ public interface DonationRepository extends JpaRepository<Donation, Long> {
            "LOWER(d.title) LIKE LOWER(CONCAT('%', :search, '%')) OR " +
            "LOWER(d.description) LIKE LOWER(CONCAT('%', :search, '%'))")
     Page<Donation> searchDonations(@Param("search") String search, Pageable pageable);
+    
+    // Search donations by user (for regular users to see only their own donations)
+    @EntityGraph(attributePaths = {"createdBy", "ngo", "location", "categories"})
+    @Query("SELECT d FROM Donation d WHERE " +
+           "d.createdBy.id = :userId AND " +
+           "(LOWER(d.title) LIKE LOWER(CONCAT('%', :search, '%')) OR " +
+           "LOWER(d.description) LIKE LOWER(CONCAT('%', :search, '%')))")
+    Page<Donation> searchDonationsByUser(@Param("search") String search, 
+                                         @Param("userId") Long userId, 
+                                         Pageable pageable);
     
     @EntityGraph(attributePaths = {"createdBy", "ngo", "location", "categories"})
     @Query("SELECT d FROM Donation d JOIN d.categories c WHERE c.id = :categoryId")
@@ -74,9 +93,11 @@ public interface DonationRepository extends JpaRepository<Donation, Long> {
     @Query("SELECT d.type, COUNT(d) FROM Donation d GROUP BY d.type")
     List<Object[]> countDonationsByType();
     
+    @EntityGraph(attributePaths = {"createdBy", "ngo", "location", "categories"})
     @Query("SELECT d FROM Donation d WHERE d.location.province = :province AND d.priorityLevel = 'URGENT'")
     Page<Donation> findByProvinceAndUrgent(@Param("province") String province, Pageable pageable);
     
+    @EntityGraph(attributePaths = {"createdBy", "ngo", "location", "categories"})
     @Query("SELECT d FROM Donation d WHERE d.ngo.id = :ngoId AND d.status = 'FULFILLED'")
     Page<Donation> findFulfilledDonationsByNgo(@Param("ngoId") Long ngoId, Pageable pageable);
 }

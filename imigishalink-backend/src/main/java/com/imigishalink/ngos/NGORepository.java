@@ -2,9 +2,11 @@ package com.imigishalink.ngos;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.EntityGraph;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
+import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -12,6 +14,15 @@ import java.util.Optional;
 
 @Repository
 public interface NGORepository extends JpaRepository<NGO, Long> {
+    
+    @EntityGraph(attributePaths = {"headOfficeLocation", "admins"})
+    @Override
+    @NonNull
+    Page<NGO> findAll(@NonNull Pageable pageable);
+    
+    @EntityGraph(attributePaths = {"headOfficeLocation", "admins"})
+    @Query("SELECT n FROM NGO n WHERE n.id = :id")
+    Optional<NGO> findByIdWithAdmins(@Param("id") Long id);
     
     Optional<NGO> findByRegistrationNumber(String registrationNumber);
     
@@ -21,25 +32,33 @@ public interface NGORepository extends JpaRepository<NGO, Long> {
     
     boolean existsByEmail(String email);
     
+    @EntityGraph(attributePaths = {"headOfficeLocation"})
     Page<NGO> findByIsVerifiedTrue(Pageable pageable);
     
+    @EntityGraph(attributePaths = {"headOfficeLocation"})
     Page<NGO> findByIsVerifiedFalse(Pageable pageable);
     
+    @EntityGraph(attributePaths = {"headOfficeLocation"})
     Page<NGO> findByHeadOfficeLocationProvince(String province, Pageable pageable);
     
+    @EntityGraph(attributePaths = {"headOfficeLocation"})
     Page<NGO> findByHeadOfficeLocationDistrict(String district, Pageable pageable);
     
+    @EntityGraph(attributePaths = {"headOfficeLocation"})
     @Query("SELECT n FROM NGO n WHERE n.headOfficeLocation.province = :province AND :categoryId IN (SELECT c.id FROM n.categories c)")
     Page<NGO> findByHeadOfficeLocationProvinceAndCategoryId(@Param("province") String province, @Param("categoryId") Long categoryId, Pageable pageable);
     
+    @EntityGraph(attributePaths = {"headOfficeLocation"})
     @Query("SELECT n FROM NGO n WHERE " +
            "LOWER(n.name) LIKE LOWER(CONCAT('%', :search, '%')) OR " +
            "LOWER(n.description) LIKE LOWER(CONCAT('%', :search, '%'))")
     Page<NGO> searchNgos(@Param("search") String search, Pageable pageable);
     
+    @EntityGraph(attributePaths = {"headOfficeLocation"})
     @Query("SELECT n FROM NGO n JOIN n.categories c WHERE c.id = :categoryId")
     Page<NGO> findByCategoryId(@Param("categoryId") Long categoryId, Pageable pageable);
     
+    @EntityGraph(attributePaths = {"headOfficeLocation"})
     @Query("SELECT n FROM NGO n WHERE n.id IN " +
            "(SELECT ngo.id FROM User u JOIN u.managedNgos ngo WHERE u.id = :userId)")
     Page<NGO> findByAdminId(@Param("userId") Long userId, Pageable pageable);
@@ -50,6 +69,7 @@ public interface NGORepository extends JpaRepository<NGO, Long> {
     @Query("SELECT n.headOfficeLocation.province, COUNT(n) FROM NGO n GROUP BY n.headOfficeLocation.province")
     List<Object[]> countNgosByProvince();
     
+    @EntityGraph(attributePaths = {"headOfficeLocation"})
     @Query("SELECT n FROM NGO n ORDER BY n.totalDonationsReceived DESC")
     Page<NGO> findTopNgos(Pageable pageable);
 }

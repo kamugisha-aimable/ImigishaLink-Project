@@ -26,6 +26,28 @@ public class LocationController {
     @GetMapping("/provinces")
     public ResponseEntity<ApiResponse<List<String>>> getAllProvinces() {
         List<String> provinces = locationRepository.findAllProvinces();
+        // If no provinces in DB, return Rwandan provinces from static data
+        if (provinces.isEmpty()) {
+            provinces = RwandaLocationData.getProvinces();
+        } else {
+            // Filter out City of Kigali and ensure we have the 4 main provinces
+            provinces.removeIf(p -> p.contains("Kigali") || p.equalsIgnoreCase("City of Kigali"));
+            // Ensure all 4 provinces are present
+            List<String> rwandaProvinces = RwandaLocationData.getProvinces();
+            for (String province : rwandaProvinces) {
+                if (!provinces.contains(province)) {
+                    provinces.add(province);
+                }
+            }
+            provinces.sort((a, b) -> {
+                int aIndex = rwandaProvinces.indexOf(a);
+                int bIndex = rwandaProvinces.indexOf(b);
+                if (aIndex != -1 && bIndex != -1) return aIndex - bIndex;
+                if (aIndex != -1) return -1;
+                if (bIndex != -1) return 1;
+                return a.compareTo(b);
+            });
+        }
         return ResponseEntity.ok(ApiResponse.success(provinces));
     }
     
@@ -33,27 +55,68 @@ public class LocationController {
     public ResponseEntity<ApiResponse<List<String>>> getDistrictsByProvince(
             @RequestParam String province) {
         List<String> districts = locationRepository.findDistrictsByProvince(province);
+        // If no districts in DB, return from static data
+        if (districts.isEmpty()) {
+            districts = RwandaLocationData.getDistricts(province);
+        }
         return ResponseEntity.ok(ApiResponse.success(districts));
     }
     
     @GetMapping("/sectors")
     public ResponseEntity<ApiResponse<List<String>>> getSectorsByDistrict(
-            @RequestParam String district) {
-        List<String> sectors = locationRepository.findSectorsByDistrict(district);
+            @RequestParam String district,
+            @RequestParam(required = false) String province) {
+        List<String> sectors;
+        if (province != null && !province.trim().isEmpty()) {
+            // Use hierarchical query to ensure sectors belong to both district and province
+            sectors = locationRepository.findSectorsByDistrictAndProvince(district, province);
+        } else {
+            sectors = locationRepository.findSectorsByDistrict(district);
+        }
+        // If no sectors in DB, return from static data
+        if (sectors.isEmpty()) {
+            sectors = RwandaLocationData.getSectors(district);
+        }
         return ResponseEntity.ok(ApiResponse.success(sectors));
     }
     
     @GetMapping("/cells")
     public ResponseEntity<ApiResponse<List<String>>> getCellsBySector(
-            @RequestParam String sector) {
-        List<String> cells = locationRepository.findCellsBySector(sector);
+            @RequestParam String sector,
+            @RequestParam(required = false) String district,
+            @RequestParam(required = false) String province) {
+        List<String> cells;
+        if (province != null && district != null && !province.trim().isEmpty() && !district.trim().isEmpty()) {
+            // Use hierarchical query to ensure cells belong to sector, district, and province
+            cells = locationRepository.findCellsBySectorDistrictAndProvince(sector, district, province);
+        } else {
+            cells = locationRepository.findCellsBySector(sector);
+        }
+        // If no cells in DB, return from static data
+        if (cells.isEmpty()) {
+            cells = RwandaLocationData.getCells(sector);
+        }
         return ResponseEntity.ok(ApiResponse.success(cells));
     }
     
     @GetMapping("/villages")
     public ResponseEntity<ApiResponse<List<String>>> getVillagesByCell(
-            @RequestParam String cell) {
-        List<String> villages = locationRepository.findVillagesByCell(cell);
+            @RequestParam String cell,
+            @RequestParam(required = false) String sector,
+            @RequestParam(required = false) String district,
+            @RequestParam(required = false) String province) {
+        List<String> villages;
+        if (province != null && district != null && sector != null 
+            && !province.trim().isEmpty() && !district.trim().isEmpty() && !sector.trim().isEmpty()) {
+            // Use hierarchical query to ensure villages belong to cell, sector, district, and province
+            villages = locationRepository.findVillagesByCellSectorDistrictAndProvince(cell, sector, district, province);
+        } else {
+            villages = locationRepository.findVillagesByCell(cell);
+        }
+        // If no villages in DB, return from static data
+        if (villages.isEmpty()) {
+            villages = RwandaLocationData.getVillages(cell);
+        }
         return ResponseEntity.ok(ApiResponse.success(villages));
     }
     

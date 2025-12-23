@@ -50,5 +50,23 @@ public class NGOSeederController {
             ));
         }
     }
+    
+    @PostMapping("/assign-locations")
+    @PreAuthorize("hasRole('ADMIN')")
+    public ResponseEntity<ApiResponse<String>> assignLocationsToNGOs(
+            @RequestParam(defaultValue = "false") boolean reassignAll) {
+        try {
+            int updated = seederService.assignLocationsToNGOs(reassignAll);
+            String message = reassignAll 
+                ? String.format("Successfully assigned locations to %d NGOs (reassigned all)", updated)
+                : String.format("Successfully assigned locations to %d NGOs (only those without locations)", updated);
+            return ResponseEntity.ok(ApiResponse.success(message));
+        } catch (Exception e) {
+            log.error("Error assigning locations to NGOs", e);
+            return ResponseEntity.badRequest().body(ApiResponse.error(
+                "Failed to assign locations: " + e.getMessage()
+            ));
+        }
+    }
 }
 

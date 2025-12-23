@@ -1,5 +1,6 @@
 package com.imigishalink.ngos;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.imigishalink.categories.Category;
 import com.imigishalink.common.BaseEntity;
@@ -82,6 +83,7 @@ public class NGO extends BaseEntity {
         inverseJoinColumns = @JoinColumn(name = "user_id")
     )
     @Builder.Default
+    @JsonIgnore
     private Set<User> admins = new HashSet<>();
     
     // Many-to-many with Categories
@@ -92,11 +94,13 @@ public class NGO extends BaseEntity {
         inverseJoinColumns = @JoinColumn(name = "category_id")
     )
     @Builder.Default
+    @JsonIgnore
     private Set<Category> categories = new HashSet<>();
     
     // One-to-many with Donations
     @OneToMany(mappedBy = "ngo", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @Builder.Default
+    @JsonIgnore
     private Set<Donation> donations = new HashSet<>();
     
     // Helper methods

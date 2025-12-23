@@ -4,6 +4,8 @@ import com.imigishalink.categories.Category;
 import com.imigishalink.categories.CategoryRepository;
 import com.imigishalink.location.Location;
 import com.imigishalink.location.LocationRepository;
+import com.imigishalink.ngos.NGO;
+import com.imigishalink.ngos.NGORepository;
 import com.imigishalink.users.Role;
 import com.imigishalink.users.User;
 import com.imigishalink.users.UserRepository;
@@ -30,7 +32,8 @@ public class DataInitializer {
     public CommandLineRunner initData(
             UserRepository userRepository,
             CategoryRepository categoryRepository,
-            LocationRepository locationRepository) {
+            LocationRepository locationRepository,
+            NGORepository ngoRepository) {
         
         return args -> {
             log.info("Initializing sample data...");
@@ -90,20 +93,23 @@ public class DataInitializer {
             }
             
             // Create test NGO user
+            User ngoUser = null;
             if (userRepository.findByEmail("ngo@test.rw").isEmpty()) {
-                User ngoUser = new User();
-                ngoUser.setFirstName("NGO");
-                ngoUser.setLastName("Test");
-                ngoUser.setEmail("ngo@test.rw");
-                ngoUser.setPassword(passwordEncoder.encode("Ngo@123"));
-                ngoUser.setPhoneNumber("+250788654321");
-                ngoUser.setRole(Role.NGO);
-                ngoUser.setVerified(true);
-                ngoUser.setCreatedAt(LocalDateTime.now());
-                ngoUser.setActive(true);
+                User ngoUserEntity = new User();
+                ngoUserEntity.setFirstName("NGO");
+                ngoUserEntity.setLastName("Test");
+                ngoUserEntity.setEmail("ngo@test.rw");
+                ngoUserEntity.setPassword(passwordEncoder.encode("Ngo@123"));
+                ngoUserEntity.setPhoneNumber("+250788654321");
+                ngoUserEntity.setRole(Role.NGO);
+                ngoUserEntity.setVerified(true);
+                ngoUserEntity.setCreatedAt(LocalDateTime.now());
+                ngoUserEntity.setActive(true);
                 
-                userRepository.save(ngoUser);
+                ngoUser = userRepository.save(ngoUserEntity);
                 log.info("Created NGO user: ngo@test.rw / Ngo@123");
+            } else {
+                ngoUser = userRepository.findByEmail("ngo@test.rw").orElse(null);
             }
             
             // Create test donor user
@@ -121,6 +127,75 @@ public class DataInitializer {
                 
                 userRepository.save(donorUser);
                 log.info("Created donor user: donor@test.rw / Donor@123");
+            }
+            
+            // Create sample NGOs if none exist
+            if (ngoRepository.count() == 0 && ngoUser != null) {
+                List<Location> locations = locationRepository.findAll();
+                List<Category> categories = categoryRepository.findAll();
+                
+                if (!locations.isEmpty() && !categories.isEmpty()) {
+                    // Create sample NGOs
+                    NGO ngo1 = NGO.builder()
+                            .name("Hope for Children Foundation")
+                            .description("Dedicated to improving the lives of children in Rwanda through education, healthcare, and community support programs.")
+                            .registrationNumber("RNGO-000001")
+                            .email("ngo@test.rw")
+                            .phoneNumber("+250788654321")
+                            .website("www.hopeforchildren.rw")
+                            .foundedYear(2015)
+                            .isVerified(true)
+                            .totalDonationsReceived(45)
+                            .totalBeneficiaries(2500)
+                            .headOfficeLocation(locations.get(0))
+                            .build();
+                    ngo1.setCreatedAt(LocalDateTime.now().minusDays(180));
+                    ngo1.getAdmins().add(ngoUser);
+                    if (!categories.isEmpty()) {
+                        ngo1.getCategories().add(categories.get(0)); // Education
+                    }
+                    
+                    NGO ngo2 = NGO.builder()
+                            .name("Rwanda Health Initiative")
+                            .description("Providing essential healthcare services and medical supplies to underserved communities across Rwanda.")
+                            .registrationNumber("RNGO-000002")
+                            .email("health@ngo.rw")
+                            .phoneNumber("+250788654322")
+                            .website("www.rwandahealth.rw")
+                            .foundedYear(2012)
+                            .isVerified(true)
+                            .totalDonationsReceived(78)
+                            .totalBeneficiaries(4200)
+                            .headOfficeLocation(locations.size() > 1 ? locations.get(1) : locations.get(0))
+                            .build();
+                    ngo2.setCreatedAt(LocalDateTime.now().minusDays(120));
+                    if (!categories.isEmpty() && categories.size() > 1) {
+                        ngo2.getCategories().add(categories.get(1)); // Healthcare
+                    }
+                    
+                    NGO ngo3 = NGO.builder()
+                            .name("Education First Rwanda")
+                            .description("Promoting quality education and literacy programs for children and adults in rural and urban areas.")
+                            .registrationNumber("RNGO-000003")
+                            .email("education@ngo.rw")
+                            .phoneNumber("+250788654323")
+                            .website("www.educationfirst.rw")
+                            .foundedYear(2018)
+                            .isVerified(true)
+                            .totalDonationsReceived(32)
+                            .totalBeneficiaries(1800)
+                            .headOfficeLocation(locations.size() > 2 ? locations.get(2) : locations.get(0))
+                            .build();
+                    ngo3.setCreatedAt(LocalDateTime.now().minusDays(90));
+                    if (!categories.isEmpty()) {
+                        ngo3.getCategories().add(categories.get(0)); // Education
+                    }
+                    
+                    ngoRepository.saveAll(Arrays.asList(ngo1, ngo2, ngo3));
+                    log.info("Created 3 sample NGOs");
+                } else {
+                    log.warn("Cannot create sample NGOs: locations or categories are missing");
+                }
             }
             
             log.info("Data initialization completed!");

@@ -23,7 +23,7 @@ import java.util.Set;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString(exclude = {"categories", "contributions"})
-@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler", "contributions", "totalContributedValue", "fulfilled"})
 public class Donation extends BaseEntity {
     
     @Column(name = "title", nullable = false)
@@ -95,10 +95,19 @@ public class Donation extends BaseEntity {
     private Set<Category> categories = new HashSet<>();
     
     // One-to-many with Contributions (Self-referencing)
+    // Explicitly excluded from serialization to prevent lazy loading issues
     @OneToMany(mappedBy = "donation", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @Builder.Default
     @JsonIgnore
+    @Getter(AccessLevel.NONE) // Don't generate getter for this field
+    @Setter
     private Set<Contribution> contributions = new HashSet<>();
+    
+    // Manual getter with @JsonIgnore to prevent serialization
+    @JsonIgnore
+    public Set<Contribution> getContributions() {
+        return contributions;
+    }
     
     // Helper methods
     public void addCategory(Category category) {
@@ -116,14 +125,22 @@ public class Donation extends BaseEntity {
         contribution.setDonation(this);
     }
     
+    @JsonIgnore
     public BigDecimal getTotalContributedValue() {
+        if (contributions == null || contributions.isEmpty()) {
+            return BigDecimal.ZERO;
+        }
         return contributions.stream()
                 .map(Contribution::getValue)
                 .reduce(BigDecimal.ZERO, BigDecimal::add);
     }
     
+    @JsonIgnore
     public boolean isFulfilled() {
         if (quantity == null) return false;
+        if (contributions == null || contributions.isEmpty()) {
+            return false;
+        }
         int totalContributed = contributions.stream()
                 .map(Contribution::getQuantity)
                 .filter(q -> q != null)

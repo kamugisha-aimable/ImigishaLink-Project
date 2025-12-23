@@ -1,6 +1,7 @@
 package com.imigishalink.messages;
 
 import com.imigishalink.common.ApiResponse;
+import com.imigishalink.common.EmailService;
 import com.imigishalink.common.PageResponse;
 import com.imigishalink.communities.Community;
 import com.imigishalink.communities.CommunityRepository;
@@ -28,6 +29,8 @@ import java.util.Objects;
 @RequestMapping("/api/v1/messages")
 @RequiredArgsConstructor
 public class MessageController {
+    
+    private final EmailService emailService;
     
     private final MessageRepository messageRepository;
     private final UserRepository userRepository;
@@ -155,6 +158,59 @@ public class MessageController {
         response.put("totalContacts", contacts.size());
         
         return ResponseEntity.ok(ApiResponse.success(response));
+    }
+    
+    // Public contact endpoint - sends email to admin
+    @PostMapping("/contact")
+    public ResponseEntity<ApiResponse<Map<String, String>>> sendContactMessage(
+            @RequestBody Map<String, String> contactForm) {
+        
+        String name = contactForm.get("name");
+        String email = contactForm.get("email");
+        String topic = contactForm.get("topic");
+        String phone = contactForm.get("phone");
+        String message = contactForm.get("message");
+        
+        if (name == null || email == null || message == null) {
+            throw new RuntimeException("Name, email, and message are required");
+        }
+        
+        // Find admin user
+        User admin = userRepository.findByEmail("admin@imigishalink.rw")
+                .orElse(null);
+        
+        String adminEmail = admin != null ? admin.getEmail() : "admin@imigishalink.rw";
+        
+        // Create email body
+        String emailBody = String.format(
+            "New Contact Form Submission\n\n" +
+            "Name: %s\n" +
+            "Email: %s\n" +
+            "Topic: %s\n" +
+            "Phone: %s\n\n" +
+            "Message:\n%s",
+            name,
+            email,
+            topic != null ? topic : "Not specified",
+            phone != null ? phone : "Not provided",
+            message
+        );
+        
+        // Send email to admin
+        try {
+            emailService.sendEmail(adminEmail, "Contact Form: " + (topic != null ? topic : "General Support"), emailBody);
+        } catch (Exception e) {
+            // Log error but don't fail the request
+            System.err.println("Failed to send contact email: " + e.getMessage());
+        }
+        
+        // Also save as message if user is logged in (optional - for future use)
+        // For now, just send email
+        
+        Map<String, String> response = new HashMap<>();
+        response.put("message", "Your message has been sent successfully. We'll get back to you soon!");
+        
+        return ResponseEntity.ok(ApiResponse.success("Message sent successfully", response));
     }
     
     // WebSocket endpoint

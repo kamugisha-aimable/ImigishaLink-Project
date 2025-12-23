@@ -161,6 +161,24 @@ public class UserController {
         return ResponseEntity.ok(ApiResponse.success(stats));
     }
     
+    @PostMapping
+    @PreAuthorize("hasRole('ADMIN')")
+    public ResponseEntity<ApiResponse<User>> createUser(@Valid @RequestBody User userRequest) {
+        User createdUser = userService.createUser(userRequest);
+        createdUser.setPassword(null);
+        return ResponseEntity.ok(ApiResponse.success("User created successfully", createdUser));
+    }
+    
+    @PutMapping("/{id}")
+    @PreAuthorize("hasRole('ADMIN')")
+    public ResponseEntity<ApiResponse<User>> updateUserById(
+            @PathVariable @NotNull Long id,
+            @Valid @RequestBody User updatedUser) {
+        User user = userService.updateUser(id, updatedUser);
+        user.setPassword(null);
+        return ResponseEntity.ok(ApiResponse.success("User updated successfully", user));
+    }
+    
     @DeleteMapping("/{id}")
     @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<ApiResponse<Void>> deleteUser(@PathVariable @NotNull Long id) {
@@ -172,5 +190,22 @@ public class UserController {
         userRepository.save(user);
         
         return ResponseEntity.ok(ApiResponse.success("User deactivated successfully", null));
+    }
+    
+    @PostMapping("/assign-locations")
+    @PreAuthorize("hasRole('ADMIN')")
+    public ResponseEntity<ApiResponse<String>> assignLocationsToUsers(
+            @RequestParam(defaultValue = "false") boolean reassignAll) {
+        try {
+            int updated = userService.assignLocationsToUsers(reassignAll);
+            String message = reassignAll 
+                ? String.format("Successfully assigned locations to %d users (reassigned all)", updated)
+                : String.format("Successfully assigned locations to %d users (only those without locations)", updated);
+            return ResponseEntity.ok(ApiResponse.success(message));
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(ApiResponse.error(
+                "Failed to assign locations: " + e.getMessage()
+            ));
+        }
     }
 }

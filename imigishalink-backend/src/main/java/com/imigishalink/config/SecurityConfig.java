@@ -41,15 +41,47 @@ public class SecurityConfig {
             .csrf(AbstractHttpConfigurer::disable)
             .authorizeHttpRequests(auth -> auth
                 .requestMatchers(
+                    "/",
+                    "/health",
                     "/api/v1/auth/**",
+                    "/api/auth/**",
                     "/v3/api-docs/**",
                     "/swagger-ui/**",
                     "/swagger-ui.html",
                     "/api/v1/public/**",
                     "/api/v1/categories/**"
                 ).permitAll()
-                .requestMatchers(HttpMethod.GET, "/api/v1/ngos", "/api/v1/ngos/**").permitAll()
-                .requestMatchers(HttpMethod.GET, "/api/v1/donations", "/api/v1/donations/**").permitAll()
+                // Allow public access to general NGO endpoints (must come before authenticated rules)
+                .requestMatchers(HttpMethod.GET, "/api/v1/ngos").permitAll()
+                .requestMatchers(HttpMethod.GET, "/api/v1/ngos/{id}").permitAll()
+                .requestMatchers(HttpMethod.GET, "/api/v1/ngos/top").permitAll()
+                .requestMatchers(HttpMethod.GET, "/api/v1/ngos/search").permitAll()
+                .requestMatchers(HttpMethod.POST, "/api/v1/ngos/register").permitAll()
+                // Require authentication for my-ngos endpoint (requires NGO role via @PreAuthorize)
+                .requestMatchers(HttpMethod.GET, "/api/v1/ngos/my-ngos").authenticated()
+                // Allow public access to GET donations, but require auth for specific endpoints
+                // More specific rules first - authenticated endpoints
+                .requestMatchers(HttpMethod.GET, "/api/v1/donations/pending").authenticated()
+                .requestMatchers(HttpMethod.GET, "/api/v1/donations/my-donations").authenticated()
+                // Public access to general donation endpoints
+                .requestMatchers(HttpMethod.GET, "/api/v1/donations").permitAll()
+                .requestMatchers(HttpMethod.GET, "/api/v1/donations/{id}").permitAll()
+                .requestMatchers(HttpMethod.GET, "/api/v1/donations/urgent").permitAll()
+                .requestMatchers(HttpMethod.GET, "/api/v1/donations/search").permitAll()
+                // Admin endpoints - require authentication (role checked via @PreAuthorize)
+                .requestMatchers(HttpMethod.GET, "/api/v1/users").authenticated()
+                .requestMatchers(HttpMethod.GET, "/api/v1/users/stats").authenticated()
+                .requestMatchers(HttpMethod.POST, "/api/v1/users").authenticated()
+                .requestMatchers(HttpMethod.PUT, "/api/v1/users/**").authenticated()
+                .requestMatchers(HttpMethod.DELETE, "/api/v1/users/**").authenticated()
+                .requestMatchers(HttpMethod.GET, "/api/v1/locations/provinces").permitAll()
+                .requestMatchers(HttpMethod.GET, "/api/v1/locations/districts").permitAll()
+                .requestMatchers(HttpMethod.GET, "/api/v1/locations/sectors").permitAll()
+                .requestMatchers(HttpMethod.GET, "/api/v1/locations/cells").permitAll()
+                .requestMatchers(HttpMethod.GET, "/api/v1/locations/villages").permitAll()
+                .requestMatchers(HttpMethod.GET, "/api/v1/locations/hierarchy").permitAll()
+                .requestMatchers(HttpMethod.GET, "/api/v1/search/**").permitAll()
+                .requestMatchers(HttpMethod.POST, "/api/v1/messages/contact").permitAll()
                 .anyRequest().authenticated()
             )
             .sessionManagement(session -> session

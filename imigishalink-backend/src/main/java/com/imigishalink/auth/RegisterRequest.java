@@ -25,4 +25,12 @@ public class RegisterRequest {
     private String phoneNumber;
     
     private Role role = Role.USER; // Default to USER, can be USER or NGO
+    
+    // Location fields for user registration
+    private Long locationId; // Location ID if location already exists in database
+    private String province;
+    private String district;
+    private String sector;
+    private String cell;
+    private String village;
 }
