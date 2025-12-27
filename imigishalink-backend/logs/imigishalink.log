@@ -14142,3 +14142,1201 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 2025-12-23T15:39:39.635+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-8] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
 2025-12-23T15:39:39.650+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
 2025-12-23T15:46:05.112+02:00  INFO 5640 --- [imigishalink-backend] [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 0, completed tasks = 3]
+2025-12-23T16:07:04.134+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T16:07:04.134+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] com.imigishalink.auth.LoginOTPService    : 🔐 OTP CODE FOR kamugishaaimaboy@gmail.com: 492203
+2025-12-23T16:07:04.134+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T16:07:04.134+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] com.imigishalink.auth.LoginOTPService    : Code expires in 5 minutes.
+2025-12-23T16:07:04.134+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T16:07:04.134+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] com.imigishalink.auth.LoginOTPService    : 📧 SENDING OTP EMAIL TO: kamugishaaimaboy@gmail.com
+2025-12-23T16:07:04.134+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T16:07:04.134+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] com.imigishalink.common.EmailService     : Email service configured. From: kamugishaaimaboy@gmail.com
+2025-12-23T16:07:04.134+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] com.imigishalink.common.EmailService     : Attempting to send email to: kamugishaaimaboy@gmail.com
+2025-12-23T16:07:04.134+02:00 DEBUG 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] com.imigishalink.common.EmailService     : Email from: kamugishaaimaboy@gmail.com, subject: ImigishaLink Login OTP
+2025-12-23T16:07:19.202+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] com.imigishalink.common.EmailService     : ✓ Email sent successfully to: kamugishaaimaboy@gmail.com
+2025-12-23T16:07:19.202+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] com.imigishalink.auth.LoginOTPService    : ✅ OTP email sent successfully to: kamugishaaimaboy@gmail.com
+2025-12-23T16:07:19.203+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] com.imigishalink.auth.LoginOTPService    : Please check inbox and spam folder for the code.
+2025-12-23T16:07:19.203+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T16:07:41.227+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T16:07:41.227+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] com.imigishalink.auth.LoginOTPService    : 🔐 OTP CODE FOR kamugishaaimaboy@gmail.com: 710724
+2025-12-23T16:07:41.227+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T16:07:41.227+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] com.imigishalink.auth.LoginOTPService    : Code expires in 5 minutes.
+2025-12-23T16:07:41.227+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T16:07:41.227+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] com.imigishalink.auth.LoginOTPService    : 📧 SENDING OTP EMAIL TO: kamugishaaimaboy@gmail.com
+2025-12-23T16:07:41.227+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T16:07:41.227+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] com.imigishalink.common.EmailService     : Email service configured. From: kamugishaaimaboy@gmail.com
+2025-12-23T16:07:41.227+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] com.imigishalink.common.EmailService     : Attempting to send email to: kamugishaaimaboy@gmail.com
+2025-12-23T16:07:41.227+02:00 DEBUG 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] com.imigishalink.common.EmailService     : Email from: kamugishaaimaboy@gmail.com, subject: ImigishaLink Login OTP
+2025-12-23T16:07:55.880+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] com.imigishalink.common.EmailService     : ✓ Email sent successfully to: kamugishaaimaboy@gmail.com
+2025-12-23T16:07:55.880+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] com.imigishalink.auth.LoginOTPService    : ✅ OTP email sent successfully to: kamugishaaimaboy@gmail.com
+2025-12-23T16:07:55.880+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] com.imigishalink.auth.LoginOTPService    : Please check inbox and spam folder for the code.
+2025-12-23T16:07:55.880+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T16:08:12.084+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-5] com.imigishalink.auth.LoginOTPService    : ✅ OTP verified successfully for email: kamugishaaimaboy@gmail.com
+2025-12-23T16:08:12.324+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:08:12.351+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:08:16.358+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:08:16.418+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:08:19.125+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-3] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:08:19.138+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:08:38.569+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-5] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:08:38.605+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:08:41.508+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:08:42.781+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:08:44.233+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:08:46.591+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:08:56.915+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:08:56.998+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:09:00.125+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:09:00.149+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:09:01.528+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-5] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:09:01.545+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:09:16.762+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:09:16.789+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:09:59.122+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T16:09:59.122+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] com.imigishalink.auth.LoginOTPService    : 🔐 OTP CODE FOR admin@imigishalink.rw: 793730
+2025-12-23T16:09:59.122+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T16:09:59.122+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] com.imigishalink.auth.LoginOTPService    : Code expires in 5 minutes.
+2025-12-23T16:09:59.122+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T16:09:59.122+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] com.imigishalink.auth.LoginOTPService    : 📧 SENDING OTP EMAIL TO: admin@imigishalink.rw
+2025-12-23T16:09:59.122+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T16:09:59.122+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] com.imigishalink.common.EmailService     : Email service configured. From: kamugishaaimaboy@gmail.com
+2025-12-23T16:09:59.124+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] com.imigishalink.common.EmailService     : Attempting to send email to: admin@imigishalink.rw
+2025-12-23T16:09:59.124+02:00 DEBUG 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] com.imigishalink.common.EmailService     : Email from: kamugishaaimaboy@gmail.com, subject: ImigishaLink Login OTP
+2025-12-23T16:10:13.201+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] com.imigishalink.common.EmailService     : ✓ Email sent successfully to: admin@imigishalink.rw
+2025-12-23T16:10:13.202+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] com.imigishalink.auth.LoginOTPService    : ✅ OTP email sent successfully to: admin@imigishalink.rw
+2025-12-23T16:10:13.202+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] com.imigishalink.auth.LoginOTPService    : Please check inbox and spam folder for the code.
+2025-12-23T16:10:13.203+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T16:11:12.227+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T16:11:12.227+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] com.imigishalink.auth.LoginOTPService    : 🔐 OTP CODE FOR kamugishaaimaboy@gmail.com: 529479
+2025-12-23T16:11:12.227+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T16:11:12.227+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] com.imigishalink.auth.LoginOTPService    : Code expires in 5 minutes.
+2025-12-23T16:11:12.227+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T16:11:12.227+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] com.imigishalink.auth.LoginOTPService    : 📧 SENDING OTP EMAIL TO: kamugishaaimaboy@gmail.com
+2025-12-23T16:11:12.227+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T16:11:12.227+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] com.imigishalink.common.EmailService     : Email service configured. From: kamugishaaimaboy@gmail.com
+2025-12-23T16:11:12.227+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] com.imigishalink.common.EmailService     : Attempting to send email to: kamugishaaimaboy@gmail.com
+2025-12-23T16:11:12.227+02:00 DEBUG 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] com.imigishalink.common.EmailService     : Email from: kamugishaaimaboy@gmail.com, subject: ImigishaLink Login OTP
+2025-12-23T16:11:27.113+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] com.imigishalink.common.EmailService     : ✓ Email sent successfully to: kamugishaaimaboy@gmail.com
+2025-12-23T16:11:27.113+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] com.imigishalink.auth.LoginOTPService    : ✅ OTP email sent successfully to: kamugishaaimaboy@gmail.com
+2025-12-23T16:11:27.113+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] com.imigishalink.auth.LoginOTPService    : Please check inbox and spam folder for the code.
+2025-12-23T16:11:27.113+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T16:12:35.904+02:00  INFO 24144 --- [imigishalink-backend] [restartedMain] c.imigishalink.ImigishalinkApplication   : Starting ImigishalinkApplication using Java 21.0.7 with PID 24144 (K:\new\AUCA\Semester 7\Web Technology and Internet\Web Tech\ImigishaLink Project\imigishalink-backend\target\classes started by USER in K:\new\AUCA\Semester 7\Web Technology and Internet\Web Tech\ImigishaLink Project\imigishalink-backend)
+2025-12-23T16:12:35.959+02:00 DEBUG 24144 --- [imigishalink-backend] [restartedMain] c.imigishalink.ImigishalinkApplication   : Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-12-23T16:12:36.005+02:00  INFO 24144 --- [imigishalink-backend] [restartedMain] c.imigishalink.ImigishalinkApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-12-23T16:12:36.791+02:00  INFO 24144 --- [imigishalink-backend] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-23T16:12:36.849+02:00  INFO 24144 --- [imigishalink-backend] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-23T16:12:50.845+02:00  INFO 24144 --- [imigishalink-backend] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-23T16:12:51.695+02:00  INFO 24144 --- [imigishalink-backend] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 722 ms. Found 11 JPA repository interfaces.
+2025-12-23T16:13:07.049+02:00  INFO 24144 --- [imigishalink-backend] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-23T16:13:07.357+02:00  INFO 24144 --- [imigishalink-backend] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-23T16:13:07.359+02:00  INFO 24144 --- [imigishalink-backend] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-12-23T16:13:08.118+02:00  INFO 24144 --- [imigishalink-backend] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-23T16:13:08.120+02:00  INFO 24144 --- [imigishalink-backend] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 31165 ms
+2025-12-23T16:13:09.474+02:00  INFO 24144 --- [imigishalink-backend] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-23T16:13:11.127+02:00  INFO 24144 --- [imigishalink-backend] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-12-23T16:13:11.734+02:00  INFO 24144 --- [imigishalink-backend] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-23T16:13:14.993+02:00  INFO 24144 --- [imigishalink-backend] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-23T16:13:15.307+02:00  INFO 24144 --- [imigishalink-backend] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-23T16:13:18.643+02:00  INFO 24144 --- [imigishalink-backend] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@c9efb0c
+2025-12-23T16:13:18.666+02:00  INFO 24144 --- [imigishalink-backend] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-23T16:13:32.797+02:00  INFO 24144 --- [imigishalink-backend] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-23T16:13:38.025+02:00  INFO 24144 --- [imigishalink-backend] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-23T16:13:41.915+02:00  INFO 24144 --- [imigishalink-backend] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-23T16:13:49.079+02:00 DEBUG 24144 --- [imigishalink-backend] [restartedMain] c.i.security.JwtAuthenticationFilter     : Filter 'jwtAuthenticationFilter' configured for use
+2025-12-23T16:13:49.915+02:00  INFO 24144 --- [imigishalink-backend] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-12-23T16:13:49.917+02:00  WARN 24144 --- [imigishalink-backend] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2025-12-23T16:13:59.078+02:00  WARN 24144 --- [imigishalink-backend] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-12-23T16:13:59.330+02:00  WARN 24144 --- [imigishalink-backend] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-12-23T16:13:59.343+02:00  INFO 24144 --- [imigishalink-backend] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-23T16:13:59.351+02:00  INFO 24144 --- [imigishalink-backend] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-23T16:13:59.360+02:00  INFO 24144 --- [imigishalink-backend] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-23T16:13:59.594+02:00  INFO 24144 --- [imigishalink-backend] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-12-23T16:14:00.028+02:00 ERROR 24144 --- [imigishalink-backend] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-12-23T16:14:36.453+02:00  WARN 5640 --- [imigishalink-backend] [HikariPool-30 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-30 - Thread starvation or clock leap detected (housekeeper delta=1m3s887ms39µs100ns).
+2025-12-23T16:16:05.129+02:00  INFO 5640 --- [imigishalink-backend] [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 5, active threads = 1, queued tasks = 0, completed tasks = 4]
+2025-12-23T16:18:41.266+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] com.imigishalink.auth.LoginOTPService    : Expired OTP attempt for email: kamugishaaimaboy@gmail.com
+2025-12-23T16:18:41.355+02:00 ERROR 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] c.i.exception.GlobalExceptionHandler     : Runtime exception: Invalid or expired OTP
+
+java.lang.RuntimeException: Invalid or expired OTP
+	at com.imigishalink.auth.OTPAuthController.verifyOTP(OTPAuthController.java:92) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:379) ~[spring-tx-6.1.13.jar:6.1.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720) ~[spring-aop-6.1.13.jar:6.1.13]
+	at com.imigishalink.auth.OTPAuthController$$SpringCGLIB$$0.verifyOTP(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.30.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.30.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at com.imigishalink.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:42) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-12-23T16:18:41.416+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.RuntimeException: Invalid or expired OTP]
+2025-12-23T16:18:44.989+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] com.imigishalink.auth.LoginOTPService    : Expired OTP attempt for email: kamugishaaimaboy@gmail.com
+2025-12-23T16:18:44.990+02:00 ERROR 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] c.i.exception.GlobalExceptionHandler     : Runtime exception: Invalid or expired OTP
+
+java.lang.RuntimeException: Invalid or expired OTP
+	at com.imigishalink.auth.OTPAuthController.verifyOTP(OTPAuthController.java:92) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:379) ~[spring-tx-6.1.13.jar:6.1.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720) ~[spring-aop-6.1.13.jar:6.1.13]
+	at com.imigishalink.auth.OTPAuthController$$SpringCGLIB$$0.verifyOTP(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.30.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.30.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at com.imigishalink.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:42) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-12-23T16:18:45.001+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.RuntimeException: Invalid or expired OTP]
+2025-12-23T16:19:15.688+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T16:19:15.689+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] com.imigishalink.auth.LoginOTPService    : 🔐 OTP CODE FOR kamugishaaimaboy@gmail.com: 372816
+2025-12-23T16:19:15.689+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T16:19:15.689+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] com.imigishalink.auth.LoginOTPService    : Code expires in 5 minutes.
+2025-12-23T16:19:15.690+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T16:19:15.690+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] com.imigishalink.auth.LoginOTPService    : 📧 SENDING OTP EMAIL TO: kamugishaaimaboy@gmail.com
+2025-12-23T16:19:15.690+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T16:19:15.691+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] com.imigishalink.common.EmailService     : Email service configured. From: kamugishaaimaboy@gmail.com
+2025-12-23T16:19:15.691+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] com.imigishalink.common.EmailService     : Attempting to send email to: kamugishaaimaboy@gmail.com
+2025-12-23T16:19:15.691+02:00 DEBUG 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] com.imigishalink.common.EmailService     : Email from: kamugishaaimaboy@gmail.com, subject: ImigishaLink Login OTP
+2025-12-23T16:19:30.036+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] com.imigishalink.common.EmailService     : ✓ Email sent successfully to: kamugishaaimaboy@gmail.com
+2025-12-23T16:19:30.036+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] com.imigishalink.auth.LoginOTPService    : ✅ OTP email sent successfully to: kamugishaaimaboy@gmail.com
+2025-12-23T16:19:30.036+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] com.imigishalink.auth.LoginOTPService    : Please check inbox and spam folder for the code.
+2025-12-23T16:19:30.036+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T16:19:36.664+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T16:19:36.664+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : 🔐 OTP CODE FOR kamugishaaimaboy@gmail.com: 453779
+2025-12-23T16:19:36.664+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T16:19:36.664+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : Code expires in 5 minutes.
+2025-12-23T16:19:36.664+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T16:19:36.665+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : 📧 SENDING OTP EMAIL TO: kamugishaaimaboy@gmail.com
+2025-12-23T16:19:36.665+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T16:19:36.665+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.common.EmailService     : Email service configured. From: kamugishaaimaboy@gmail.com
+2025-12-23T16:19:36.665+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.common.EmailService     : Attempting to send email to: kamugishaaimaboy@gmail.com
+2025-12-23T16:19:36.665+02:00 DEBUG 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.common.EmailService     : Email from: kamugishaaimaboy@gmail.com, subject: ImigishaLink Login OTP
+2025-12-23T16:19:50.788+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.common.EmailService     : ✓ Email sent successfully to: kamugishaaimaboy@gmail.com
+2025-12-23T16:19:50.788+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : ✅ OTP email sent successfully to: kamugishaaimaboy@gmail.com
+2025-12-23T16:19:50.788+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : Please check inbox and spam folder for the code.
+2025-12-23T16:19:50.788+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T16:20:09.290+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] com.imigishalink.auth.LoginOTPService    : ✅ OTP verified successfully for email: kamugishaaimaboy@gmail.com
+2025-12-23T16:20:10.162+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:20:10.188+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:27:16.652+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:27:16.693+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-3] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:43:20.798+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:43:20.966+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-8] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:46:05.446+02:00  INFO 5640 --- [imigishalink-backend] [MessageBroker-2] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 6, active threads = 1, queued tasks = 0, completed tasks = 5]
+2025-12-23T16:57:10.901+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:57:10.901+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:57:10.989+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:57:10.998+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:57:24.248+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-8] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:57:24.270+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-5] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:57:25.292+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:57:25.340+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-3] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:57:27.549+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-8] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:57:27.624+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:57:29.947+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:57:29.965+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:57:32.182+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:57:32.198+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:57:38.292+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T16:57:38.377+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-3] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:00:11.708+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-8] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:00:11.731+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:00:54.721+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:00:54.782+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:01:00.035+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-8] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:01:00.054+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-5] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:01:44.371+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:01:44.403+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:01:46.805+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:01:47.701+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:01:48.602+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:01:50.567+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:01:51.703+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:01:52.417+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:01:53.171+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:01:54.167+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:01:54.994+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:01:56.303+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-3] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:01:57.304+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:01:58.610+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:02:00.017+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:02:01.300+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:02:02.284+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-5] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:02:04.704+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-3] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:03:30.628+02:00  INFO 14136 --- [imigishalink-backend] [restartedMain] c.imigishalink.ImigishalinkApplication   : Starting ImigishalinkApplication using Java 21.0.7 with PID 14136 (K:\new\AUCA\Semester 7\Web Technology and Internet\Web Tech\ImigishaLink Project\imigishalink-backend\target\classes started by USER in K:\new\AUCA\Semester 7\Web Technology and Internet\Web Tech\ImigishaLink Project\imigishalink-backend)
+2025-12-23T17:03:30.628+02:00 DEBUG 14136 --- [imigishalink-backend] [restartedMain] c.imigishalink.ImigishalinkApplication   : Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-12-23T17:03:30.628+02:00  INFO 14136 --- [imigishalink-backend] [restartedMain] c.imigishalink.ImigishalinkApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-12-23T17:03:30.794+02:00  INFO 14136 --- [imigishalink-backend] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-23T17:03:30.794+02:00  INFO 14136 --- [imigishalink-backend] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-23T17:03:31.801+02:00  INFO 14136 --- [imigishalink-backend] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-23T17:03:31.909+02:00  INFO 14136 --- [imigishalink-backend] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 108 ms. Found 11 JPA repository interfaces.
+2025-12-23T17:03:32.769+02:00  INFO 14136 --- [imigishalink-backend] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-23T17:03:32.801+02:00  INFO 14136 --- [imigishalink-backend] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-23T17:03:32.801+02:00  INFO 14136 --- [imigishalink-backend] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-12-23T17:03:32.848+02:00  INFO 14136 --- [imigishalink-backend] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-23T17:03:32.848+02:00  INFO 14136 --- [imigishalink-backend] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2054 ms
+2025-12-23T17:03:33.018+02:00  INFO 14136 --- [imigishalink-backend] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-23T17:03:33.096+02:00  INFO 14136 --- [imigishalink-backend] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-12-23T17:03:33.138+02:00  INFO 14136 --- [imigishalink-backend] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-23T17:03:33.485+02:00  INFO 14136 --- [imigishalink-backend] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-23T17:03:33.522+02:00  INFO 14136 --- [imigishalink-backend] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-23T17:03:33.800+02:00  INFO 14136 --- [imigishalink-backend] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@75a1fcdb
+2025-12-23T17:03:33.800+02:00  INFO 14136 --- [imigishalink-backend] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-23T17:03:35.764+02:00  INFO 14136 --- [imigishalink-backend] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-23T17:03:36.195+02:00  INFO 14136 --- [imigishalink-backend] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-23T17:03:36.596+02:00  INFO 14136 --- [imigishalink-backend] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-23T17:03:37.767+02:00 DEBUG 14136 --- [imigishalink-backend] [restartedMain] c.i.security.JwtAuthenticationFilter     : Filter 'jwtAuthenticationFilter' configured for use
+2025-12-23T17:03:37.833+02:00  INFO 14136 --- [imigishalink-backend] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-12-23T17:03:37.834+02:00  WARN 14136 --- [imigishalink-backend] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2025-12-23T17:03:39.238+02:00  WARN 14136 --- [imigishalink-backend] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-12-23T17:03:39.270+02:00  WARN 14136 --- [imigishalink-backend] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-12-23T17:03:39.277+02:00  INFO 14136 --- [imigishalink-backend] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-23T17:03:39.283+02:00  INFO 14136 --- [imigishalink-backend] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-23T17:03:39.290+02:00  INFO 14136 --- [imigishalink-backend] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-23T17:03:39.318+02:00  INFO 14136 --- [imigishalink-backend] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-12-23T17:03:39.362+02:00 ERROR 14136 --- [imigishalink-backend] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-12-23T17:09:48.305+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] com.imigishalink.common.EmailService     : Email service configured. From: kamugishaaimaboy@gmail.com
+2025-12-23T17:09:48.306+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] com.imigishalink.common.EmailService     : Attempting to send email to: kamugishaaimaboy@gmail.com
+2025-12-23T17:09:48.306+02:00 DEBUG 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] com.imigishalink.common.EmailService     : Email from: kamugishaaimaboy@gmail.com, subject: ImigishaLink password reset
+2025-12-23T17:10:03.982+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] com.imigishalink.common.EmailService     : ✓ Email sent successfully to: kamugishaaimaboy@gmail.com
+2025-12-23T17:12:15.394+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-3] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:12:15.394+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-3] com.imigishalink.auth.LoginOTPService    : 🔐 OTP CODE FOR kamugishaaimaboy@gmail.com: 275486
+2025-12-23T17:12:15.394+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-3] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:12:15.394+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-3] com.imigishalink.auth.LoginOTPService    : Code expires in 5 minutes.
+2025-12-23T17:12:15.394+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-3] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:12:15.394+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-3] com.imigishalink.auth.LoginOTPService    : 📧 SENDING OTP EMAIL TO: kamugishaaimaboy@gmail.com
+2025-12-23T17:12:15.394+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-3] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:12:15.394+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-3] com.imigishalink.common.EmailService     : Email service configured. From: kamugishaaimaboy@gmail.com
+2025-12-23T17:12:15.394+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-3] com.imigishalink.common.EmailService     : Attempting to send email to: kamugishaaimaboy@gmail.com
+2025-12-23T17:12:15.394+02:00 DEBUG 5640 --- [imigishalink-backend] [http-nio-8080-exec-3] com.imigishalink.common.EmailService     : Email from: kamugishaaimaboy@gmail.com, subject: ImigishaLink Login OTP
+2025-12-23T17:12:30.732+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-3] com.imigishalink.common.EmailService     : ✓ Email sent successfully to: kamugishaaimaboy@gmail.com
+2025-12-23T17:12:30.732+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-3] com.imigishalink.auth.LoginOTPService    : ✅ OTP email sent successfully to: kamugishaaimaboy@gmail.com
+2025-12-23T17:12:30.732+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-3] com.imigishalink.auth.LoginOTPService    : Please check inbox and spam folder for the code.
+2025-12-23T17:12:30.732+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-3] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:14:14.121+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:14:14.121+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] com.imigishalink.auth.LoginOTPService    : 🔐 OTP CODE FOR kamugishaaimaboy@gmail.com: 440145
+2025-12-23T17:14:14.121+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:14:14.121+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] com.imigishalink.auth.LoginOTPService    : Code expires in 5 minutes.
+2025-12-23T17:14:14.121+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:14:14.121+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] com.imigishalink.auth.LoginOTPService    : 📧 SENDING OTP EMAIL TO: kamugishaaimaboy@gmail.com
+2025-12-23T17:14:14.121+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:14:14.121+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] com.imigishalink.common.EmailService     : Email service configured. From: kamugishaaimaboy@gmail.com
+2025-12-23T17:14:14.121+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] com.imigishalink.common.EmailService     : Attempting to send email to: kamugishaaimaboy@gmail.com
+2025-12-23T17:14:14.121+02:00 DEBUG 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] com.imigishalink.common.EmailService     : Email from: kamugishaaimaboy@gmail.com, subject: ImigishaLink Login OTP
+2025-12-23T17:14:25.410+02:00 ERROR 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] com.imigishalink.common.EmailService     : ✗ Failed to send email to kamugishaaimaboy@gmail.com: Mail server connection failed. Failed messages: org.eclipse.angus.mail.util.MailConnectException: Couldn't connect to host, port: smtp.gmail.com, 587; timeout 5000;
+  nested exception is:
+	java.net.UnknownHostException: smtp.gmail.com
+2025-12-23T17:14:25.410+02:00 ERROR 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] com.imigishalink.common.EmailService     : Error details: 
+
+org.springframework.mail.MailSendException: Mail server connection failed. Failed messages: org.eclipse.angus.mail.util.MailConnectException: Couldn't connect to host, port: smtp.gmail.com, 587; timeout 5000;
+  nested exception is:
+	java.net.UnknownHostException: smtp.gmail.com
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:410) ~[spring-context-support-6.1.13.jar:6.1.13]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:317) ~[spring-context-support-6.1.13.jar:6.1.13]
+	at org.springframework.mail.MailSender.send(MailSender.java:42) ~[spring-context-support-6.1.13.jar:6.1.13]
+	at com.imigishalink.common.EmailService.sendEmail(EmailService.java:42) ~[classes/:na]
+	at com.imigishalink.auth.LoginOTPService.sendOTPEmail(LoginOTPService.java:115) ~[classes/:na]
+	at com.imigishalink.auth.LoginOTPService.generateAndSendOTP(LoginOTPService.java:53) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:379) ~[spring-tx-6.1.13.jar:6.1.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720) ~[spring-aop-6.1.13.jar:6.1.13]
+	at com.imigishalink.auth.LoginOTPService$$SpringCGLIB$$0.generateAndSendOTP(<generated>) ~[classes/:na]
+	at com.imigishalink.auth.OTPAuthController.login(OTPAuthController.java:70) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:716) ~[spring-aop-6.1.13.jar:6.1.13]
+	at com.imigishalink.auth.OTPAuthController$$SpringCGLIB$$0.login(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.30.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.30.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at com.imigishalink.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:42) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: org.eclipse.angus.mail.util.MailConnectException: Couldn't connect to host, port: smtp.gmail.com, 587; timeout 5000
+	at org.eclipse.angus.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2243) ~[jakarta.mail-2.0.3.jar:na]
+	at org.eclipse.angus.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:729) ~[jakarta.mail-2.0.3.jar:na]
+	at jakarta.mail.Service.connect(Service.java:345) ~[jakarta.mail-2.0.3.jar:na]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:480) ~[spring-context-support-6.1.13.jar:6.1.13]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:399) ~[spring-context-support-6.1.13.jar:6.1.13]
+	... 124 common frames omitted
+Caused by: java.net.UnknownHostException: smtp.gmail.com
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:751) ~[na:na]
+	at org.eclipse.angus.mail.util.WriteTimeoutSocket.connect(WriteTimeoutSocket.java:118) ~[jakarta.mail-2.0.3.jar:na]
+	at org.eclipse.angus.mail.util.SocketFetcher.createSocket(SocketFetcher.java:366) ~[jakarta.mail-2.0.3.jar:na]
+	at org.eclipse.angus.mail.util.SocketFetcher.getSocket(SocketFetcher.java:243) ~[jakarta.mail-2.0.3.jar:na]
+	at org.eclipse.angus.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2193) ~[jakarta.mail-2.0.3.jar:na]
+	... 128 common frames omitted
+
+2025-12-23T17:14:25.426+02:00 ERROR 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:14:25.426+02:00 ERROR 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] com.imigishalink.auth.LoginOTPService    : ❌ FAILED TO SEND EMAIL to kamugishaaimaboy@gmail.com: Failed to send email: Mail server connection failed. Failed messages: org.eclipse.angus.mail.util.MailConnectException: Couldn't connect to host, port: smtp.gmail.com, 587; timeout 5000;
+  nested exception is:
+	java.net.UnknownHostException: smtp.gmail.com
+2025-12-23T17:14:25.426+02:00 ERROR 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:14:25.426+02:00 ERROR 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] com.imigishalink.auth.LoginOTPService    : EMAIL NOT SENT! Use the OTP code shown above: 440145
+2025-12-23T17:14:25.426+02:00 ERROR 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] com.imigishalink.auth.LoginOTPService    : Check email configuration: MAIL_USERNAME and MAIL_PASSWORD
+2025-12-23T17:14:25.426+02:00 ERROR 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:14:33.949+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:14:33.949+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] com.imigishalink.auth.LoginOTPService    : 🔐 OTP CODE FOR kamugishaaimaboy@gmail.com: 099500
+2025-12-23T17:14:33.949+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:14:33.949+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] com.imigishalink.auth.LoginOTPService    : Code expires in 5 minutes.
+2025-12-23T17:14:33.949+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:14:33.949+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] com.imigishalink.auth.LoginOTPService    : 📧 SENDING OTP EMAIL TO: kamugishaaimaboy@gmail.com
+2025-12-23T17:14:33.949+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:14:33.950+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] com.imigishalink.common.EmailService     : Email service configured. From: kamugishaaimaboy@gmail.com
+2025-12-23T17:14:33.950+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] com.imigishalink.common.EmailService     : Attempting to send email to: kamugishaaimaboy@gmail.com
+2025-12-23T17:14:33.950+02:00 DEBUG 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] com.imigishalink.common.EmailService     : Email from: kamugishaaimaboy@gmail.com, subject: ImigishaLink Login OTP
+2025-12-23T17:14:33.950+02:00 ERROR 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] com.imigishalink.common.EmailService     : ✗ Failed to send email to kamugishaaimaboy@gmail.com: Mail server connection failed. Failed messages: org.eclipse.angus.mail.util.MailConnectException: Couldn't connect to host, port: smtp.gmail.com, 587; timeout 5000;
+  nested exception is:
+	java.net.UnknownHostException: smtp.gmail.com
+2025-12-23T17:14:33.950+02:00 ERROR 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] com.imigishalink.common.EmailService     : Error details: 
+
+org.springframework.mail.MailSendException: Mail server connection failed. Failed messages: org.eclipse.angus.mail.util.MailConnectException: Couldn't connect to host, port: smtp.gmail.com, 587; timeout 5000;
+  nested exception is:
+	java.net.UnknownHostException: smtp.gmail.com
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:410) ~[spring-context-support-6.1.13.jar:6.1.13]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:317) ~[spring-context-support-6.1.13.jar:6.1.13]
+	at org.springframework.mail.MailSender.send(MailSender.java:42) ~[spring-context-support-6.1.13.jar:6.1.13]
+	at com.imigishalink.common.EmailService.sendEmail(EmailService.java:42) ~[classes/:na]
+	at com.imigishalink.auth.LoginOTPService.sendOTPEmail(LoginOTPService.java:115) ~[classes/:na]
+	at com.imigishalink.auth.LoginOTPService.generateAndSendOTP(LoginOTPService.java:53) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:379) ~[spring-tx-6.1.13.jar:6.1.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720) ~[spring-aop-6.1.13.jar:6.1.13]
+	at com.imigishalink.auth.LoginOTPService$$SpringCGLIB$$0.generateAndSendOTP(<generated>) ~[classes/:na]
+	at com.imigishalink.auth.OTPAuthController.login(OTPAuthController.java:70) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:716) ~[spring-aop-6.1.13.jar:6.1.13]
+	at com.imigishalink.auth.OTPAuthController$$SpringCGLIB$$0.login(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.30.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.30.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at com.imigishalink.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:42) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: org.eclipse.angus.mail.util.MailConnectException: Couldn't connect to host, port: smtp.gmail.com, 587; timeout 5000
+	at org.eclipse.angus.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2243) ~[jakarta.mail-2.0.3.jar:na]
+	at org.eclipse.angus.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:729) ~[jakarta.mail-2.0.3.jar:na]
+	at jakarta.mail.Service.connect(Service.java:345) ~[jakarta.mail-2.0.3.jar:na]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:480) ~[spring-context-support-6.1.13.jar:6.1.13]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:399) ~[spring-context-support-6.1.13.jar:6.1.13]
+	... 124 common frames omitted
+Caused by: java.net.UnknownHostException: smtp.gmail.com
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:751) ~[na:na]
+	at org.eclipse.angus.mail.util.WriteTimeoutSocket.connect(WriteTimeoutSocket.java:118) ~[jakarta.mail-2.0.3.jar:na]
+	at org.eclipse.angus.mail.util.SocketFetcher.createSocket(SocketFetcher.java:366) ~[jakarta.mail-2.0.3.jar:na]
+	at org.eclipse.angus.mail.util.SocketFetcher.getSocket(SocketFetcher.java:243) ~[jakarta.mail-2.0.3.jar:na]
+	at org.eclipse.angus.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2193) ~[jakarta.mail-2.0.3.jar:na]
+	... 128 common frames omitted
+
+2025-12-23T17:14:33.953+02:00 ERROR 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:14:33.953+02:00 ERROR 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] com.imigishalink.auth.LoginOTPService    : ❌ FAILED TO SEND EMAIL to kamugishaaimaboy@gmail.com: Failed to send email: Mail server connection failed. Failed messages: org.eclipse.angus.mail.util.MailConnectException: Couldn't connect to host, port: smtp.gmail.com, 587; timeout 5000;
+  nested exception is:
+	java.net.UnknownHostException: smtp.gmail.com
+2025-12-23T17:14:33.953+02:00 ERROR 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:14:33.953+02:00 ERROR 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] com.imigishalink.auth.LoginOTPService    : EMAIL NOT SENT! Use the OTP code shown above: 099500
+2025-12-23T17:14:33.953+02:00 ERROR 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] com.imigishalink.auth.LoginOTPService    : Check email configuration: MAIL_USERNAME and MAIL_PASSWORD
+2025-12-23T17:14:33.954+02:00 ERROR 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:15:30.508+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:15:30.508+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] com.imigishalink.auth.LoginOTPService    : 🔐 OTP CODE FOR kamugishaaimaboy@gmail.com: 832262
+2025-12-23T17:15:30.508+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:15:30.508+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] com.imigishalink.auth.LoginOTPService    : Code expires in 5 minutes.
+2025-12-23T17:15:30.508+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:15:30.508+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] com.imigishalink.auth.LoginOTPService    : 📧 SENDING OTP EMAIL TO: kamugishaaimaboy@gmail.com
+2025-12-23T17:15:30.508+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:15:30.508+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] com.imigishalink.common.EmailService     : Email service configured. From: kamugishaaimaboy@gmail.com
+2025-12-23T17:15:30.508+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] com.imigishalink.common.EmailService     : Attempting to send email to: kamugishaaimaboy@gmail.com
+2025-12-23T17:15:30.508+02:00 DEBUG 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] com.imigishalink.common.EmailService     : Email from: kamugishaaimaboy@gmail.com, subject: ImigishaLink Login OTP
+2025-12-23T17:15:43.754+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] com.imigishalink.common.EmailService     : ✓ Email sent successfully to: kamugishaaimaboy@gmail.com
+2025-12-23T17:15:43.754+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] com.imigishalink.auth.LoginOTPService    : ✅ OTP email sent successfully to: kamugishaaimaboy@gmail.com
+2025-12-23T17:15:43.754+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] com.imigishalink.auth.LoginOTPService    : Please check inbox and spam folder for the code.
+2025-12-23T17:15:43.754+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:16:02.972+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] com.imigishalink.auth.LoginOTPService    : ✅ OTP verified successfully for email: kamugishaaimaboy@gmail.com
+2025-12-23T17:16:03.135+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-3] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:16:03.164+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:16:04.982+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-8] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:16:04.993+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-5] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:16:05.485+02:00  INFO 5640 --- [imigishalink-backend] [MessageBroker-4] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 7, active threads = 1, queued tasks = 0, completed tasks = 6]
+2025-12-23T17:17:26.973+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:17:26.982+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:17:30.544+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-8] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:17:31.549+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-5] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:17:33.078+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:17:34.329+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:17:34.664+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:17:36.230+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:17:46.386+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:17:46.404+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-3] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:18:59.162+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-8] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:18:59.176+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:31:50.239+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:31:50.286+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:31:57.941+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-5] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:31:58.879+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:32:08.362+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:32:14.103+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:32:14.116+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:32:18.102+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:32:18.117+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:32:19.261+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-8] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:32:19.268+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-5] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:32:19.748+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:32:19.758+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:32:21.860+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:32:21.867+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:43:09.157+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:43:09.157+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] com.imigishalink.auth.LoginOTPService    : 🔐 OTP CODE FOR kamugishaaimaboy@gmail.com: 099760
+2025-12-23T17:43:09.157+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:43:09.157+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] com.imigishalink.auth.LoginOTPService    : Code expires in 5 minutes.
+2025-12-23T17:43:09.158+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:43:09.158+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] com.imigishalink.auth.LoginOTPService    : 📧 SENDING OTP EMAIL TO: kamugishaaimaboy@gmail.com
+2025-12-23T17:43:09.158+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:43:09.158+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] com.imigishalink.common.EmailService     : Email service configured. From: kamugishaaimaboy@gmail.com
+2025-12-23T17:43:09.158+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] com.imigishalink.common.EmailService     : Attempting to send email to: kamugishaaimaboy@gmail.com
+2025-12-23T17:43:09.158+02:00 DEBUG 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] com.imigishalink.common.EmailService     : Email from: kamugishaaimaboy@gmail.com, subject: ImigishaLink Login OTP
+2025-12-23T17:43:23.904+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] com.imigishalink.common.EmailService     : ✓ Email sent successfully to: kamugishaaimaboy@gmail.com
+2025-12-23T17:43:23.906+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] com.imigishalink.auth.LoginOTPService    : ✅ OTP email sent successfully to: kamugishaaimaboy@gmail.com
+2025-12-23T17:43:23.907+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] com.imigishalink.auth.LoginOTPService    : Please check inbox and spam folder for the code.
+2025-12-23T17:43:23.907+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:43:30.201+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:43:30.201+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : 🔐 OTP CODE FOR kamugishaaimaboy@gmail.com: 396170
+2025-12-23T17:43:30.201+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:43:30.201+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : Code expires in 5 minutes.
+2025-12-23T17:43:30.201+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:43:30.201+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : 📧 SENDING OTP EMAIL TO: kamugishaaimaboy@gmail.com
+2025-12-23T17:43:30.201+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:43:30.202+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.common.EmailService     : Email service configured. From: kamugishaaimaboy@gmail.com
+2025-12-23T17:43:30.202+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.common.EmailService     : Attempting to send email to: kamugishaaimaboy@gmail.com
+2025-12-23T17:43:30.202+02:00 DEBUG 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.common.EmailService     : Email from: kamugishaaimaboy@gmail.com, subject: ImigishaLink Login OTP
+2025-12-23T17:43:45.851+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.common.EmailService     : ✓ Email sent successfully to: kamugishaaimaboy@gmail.com
+2025-12-23T17:43:45.851+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : ✅ OTP email sent successfully to: kamugishaaimaboy@gmail.com
+2025-12-23T17:43:45.852+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : Please check inbox and spam folder for the code.
+2025-12-23T17:43:45.852+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:45:31.514+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-3] com.imigishalink.auth.LoginOTPService    : ✅ OTP verified successfully for email: kamugishaaimaboy@gmail.com
+2025-12-23T17:45:32.135+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:45:32.217+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-5] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:45:36.613+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-8] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:45:36.832+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:45:37.945+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:45:37.978+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T17:46:05.551+02:00  INFO 5640 --- [imigishalink-backend] [MessageBroker-4] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 7]
+2025-12-23T17:57:07.099+02:00 ERROR 5640 --- [imigishalink-backend] [http-nio-8080-exec-3] c.i.exception.GlobalExceptionHandler     : Bad credentials: Bad credentials
+2025-12-23T17:57:07.117+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2025-12-23T17:57:15.770+02:00 ERROR 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] c.i.exception.GlobalExceptionHandler     : Bad credentials: Bad credentials
+2025-12-23T17:57:15.774+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2025-12-23T17:57:25.603+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:57:25.603+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] com.imigishalink.auth.LoginOTPService    : 🔐 OTP CODE FOR admin@imigishalink.rw: 698742
+2025-12-23T17:57:25.603+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:57:25.603+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] com.imigishalink.auth.LoginOTPService    : Code expires in 5 minutes.
+2025-12-23T17:57:25.604+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:57:25.604+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] com.imigishalink.auth.LoginOTPService    : 📧 SENDING OTP EMAIL TO: admin@imigishalink.rw
+2025-12-23T17:57:25.604+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:57:25.604+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] com.imigishalink.common.EmailService     : Email service configured. From: kamugishaaimaboy@gmail.com
+2025-12-23T17:57:25.604+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] com.imigishalink.common.EmailService     : Attempting to send email to: admin@imigishalink.rw
+2025-12-23T17:57:25.604+02:00 DEBUG 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] com.imigishalink.common.EmailService     : Email from: kamugishaaimaboy@gmail.com, subject: ImigishaLink Login OTP
+2025-12-23T17:57:41.713+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] com.imigishalink.common.EmailService     : ✓ Email sent successfully to: admin@imigishalink.rw
+2025-12-23T17:57:41.714+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] com.imigishalink.auth.LoginOTPService    : ✅ OTP email sent successfully to: admin@imigishalink.rw
+2025-12-23T17:57:41.714+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] com.imigishalink.auth.LoginOTPService    : Please check inbox and spam folder for the code.
+2025-12-23T17:57:41.715+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:58:38.032+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:58:38.033+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] com.imigishalink.auth.LoginOTPService    : 🔐 OTP CODE FOR kamugishaaimaboy@gmail.com: 929163
+2025-12-23T17:58:38.033+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:58:38.033+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] com.imigishalink.auth.LoginOTPService    : Code expires in 5 minutes.
+2025-12-23T17:58:38.033+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:58:38.033+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] com.imigishalink.auth.LoginOTPService    : 📧 SENDING OTP EMAIL TO: kamugishaaimaboy@gmail.com
+2025-12-23T17:58:38.033+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:58:38.033+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] com.imigishalink.common.EmailService     : Email service configured. From: kamugishaaimaboy@gmail.com
+2025-12-23T17:58:38.033+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] com.imigishalink.common.EmailService     : Attempting to send email to: kamugishaaimaboy@gmail.com
+2025-12-23T17:58:38.034+02:00 DEBUG 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] com.imigishalink.common.EmailService     : Email from: kamugishaaimaboy@gmail.com, subject: ImigishaLink Login OTP
+2025-12-23T17:58:53.490+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] com.imigishalink.common.EmailService     : ✓ Email sent successfully to: kamugishaaimaboy@gmail.com
+2025-12-23T17:58:53.490+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] com.imigishalink.auth.LoginOTPService    : ✅ OTP email sent successfully to: kamugishaaimaboy@gmail.com
+2025-12-23T17:58:53.490+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] com.imigishalink.auth.LoginOTPService    : Please check inbox and spam folder for the code.
+2025-12-23T17:58:53.490+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T17:59:09.743+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : ✅ OTP verified successfully for email: kamugishaaimaboy@gmail.com
+2025-12-23T18:00:20.288+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:00:20.321+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-3] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:00:21.897+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:00:21.922+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:00:23.746+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-5] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:00:23.762+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:00:29.658+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-5] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:00:33.674+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:00:44.798+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:00:44.833+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:00:49.824+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-3] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:00:49.841+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-5] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:00:52.661+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:00:52.674+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:02:36.767+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:02:40.430+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:02:46.489+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:04:38.102+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-3] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:04:38.118+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:07:59.891+02:00  WARN 5640 --- [imigishalink-backend] [HikariPool-30 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-30 - Thread starvation or clock leap detected (housekeeper delta=48s475ms913µs200ns).
+2025-12-23T18:10:47.141+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.common.EmailService     : Email service configured. From: kamugishaaimaboy@gmail.com
+2025-12-23T18:10:47.148+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.common.EmailService     : Attempting to send email to: kamugishaaimaboy@gmail.com
+2025-12-23T18:10:47.148+02:00 DEBUG 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.common.EmailService     : Email from: kamugishaaimaboy@gmail.com, subject: ImigishaLink password reset
+2025-12-23T18:11:03.181+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.common.EmailService     : ✓ Email sent successfully to: kamugishaaimaboy@gmail.com
+2025-12-23T18:12:20.895+02:00 ERROR 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] c.i.exception.GlobalExceptionHandler     : Runtime exception: Invalid reset token
+
+java.lang.RuntimeException: Invalid reset token
+	at com.imigishalink.auth.PasswordResetService.lambda$1(PasswordResetService.java:64) ~[classes/:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at com.imigishalink.auth.PasswordResetService.resetPassword(PasswordResetService.java:64) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:379) ~[spring-tx-6.1.13.jar:6.1.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720) ~[spring-aop-6.1.13.jar:6.1.13]
+	at com.imigishalink.auth.PasswordResetService$$SpringCGLIB$$0.resetPassword(<generated>) ~[classes/:na]
+	at com.imigishalink.auth.AuthController.resetPassword(AuthController.java:262) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:716) ~[spring-aop-6.1.13.jar:6.1.13]
+	at com.imigishalink.auth.AuthController$$SpringCGLIB$$0.resetPassword(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.30.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.30.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at com.imigishalink.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:42) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.3.jar:6.3.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-12-23T18:12:20.993+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.RuntimeException: Invalid reset token]
+2025-12-23T18:12:38.766+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-5] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T18:12:38.766+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-5] com.imigishalink.auth.LoginOTPService    : 🔐 OTP CODE FOR kamugishaaimaboy@gmail.com: 792246
+2025-12-23T18:12:38.766+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-5] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T18:12:38.766+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-5] com.imigishalink.auth.LoginOTPService    : Code expires in 5 minutes.
+2025-12-23T18:12:38.767+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-5] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T18:12:38.767+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-5] com.imigishalink.auth.LoginOTPService    : 📧 SENDING OTP EMAIL TO: kamugishaaimaboy@gmail.com
+2025-12-23T18:12:38.767+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-5] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T18:12:38.767+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-5] com.imigishalink.common.EmailService     : Email service configured. From: kamugishaaimaboy@gmail.com
+2025-12-23T18:12:38.767+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-5] com.imigishalink.common.EmailService     : Attempting to send email to: kamugishaaimaboy@gmail.com
+2025-12-23T18:12:38.768+02:00 DEBUG 5640 --- [imigishalink-backend] [http-nio-8080-exec-5] com.imigishalink.common.EmailService     : Email from: kamugishaaimaboy@gmail.com, subject: ImigishaLink Login OTP
+2025-12-23T18:12:53.991+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-5] com.imigishalink.common.EmailService     : ✓ Email sent successfully to: kamugishaaimaboy@gmail.com
+2025-12-23T18:12:54.014+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-5] com.imigishalink.auth.LoginOTPService    : ✅ OTP email sent successfully to: kamugishaaimaboy@gmail.com
+2025-12-23T18:12:54.014+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-5] com.imigishalink.auth.LoginOTPService    : Please check inbox and spam folder for the code.
+2025-12-23T18:12:54.014+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-5] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T18:12:58.843+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T18:12:58.844+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : 🔐 OTP CODE FOR kamugishaaimaboy@gmail.com: 939527
+2025-12-23T18:12:58.844+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T18:12:58.844+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : Code expires in 5 minutes.
+2025-12-23T18:12:58.844+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T18:12:58.844+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : 📧 SENDING OTP EMAIL TO: kamugishaaimaboy@gmail.com
+2025-12-23T18:12:58.844+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T18:12:58.844+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.common.EmailService     : Email service configured. From: kamugishaaimaboy@gmail.com
+2025-12-23T18:12:58.844+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.common.EmailService     : Attempting to send email to: kamugishaaimaboy@gmail.com
+2025-12-23T18:12:58.844+02:00 DEBUG 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.common.EmailService     : Email from: kamugishaaimaboy@gmail.com, subject: ImigishaLink Login OTP
+2025-12-23T18:13:13.152+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.common.EmailService     : ✓ Email sent successfully to: kamugishaaimaboy@gmail.com
+2025-12-23T18:13:13.164+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : ✅ OTP email sent successfully to: kamugishaaimaboy@gmail.com
+2025-12-23T18:13:13.164+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : Please check inbox and spam folder for the code.
+2025-12-23T18:13:13.164+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T18:13:28.577+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] com.imigishalink.auth.LoginOTPService    : ✅ OTP verified successfully for email: kamugishaaimaboy@gmail.com
+2025-12-23T18:13:28.905+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-3] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:13:29.008+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:13:32.850+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:13:32.894+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:13:34.969+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-5] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:14:59.784+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:15:01.245+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:15:05.489+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-8] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:15:08.123+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:15:17.130+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:16:05.613+02:00  INFO 5640 --- [imigishalink-backend] [MessageBroker-4] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 8]
+2025-12-23T18:16:33.807+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:16:38.487+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-9] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:16:42.730+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-5] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:17:00.382+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-3] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:17:00.865+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:18:53.971+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:18:53.990+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:20:53.597+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T18:20:53.597+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] com.imigishalink.auth.LoginOTPService    : 🔐 OTP CODE FOR admin@imigishalink.rw: 797355
+2025-12-23T18:20:53.597+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T18:20:53.597+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] com.imigishalink.auth.LoginOTPService    : Code expires in 5 minutes.
+2025-12-23T18:20:53.597+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T18:20:53.597+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] com.imigishalink.auth.LoginOTPService    : 📧 SENDING OTP EMAIL TO: admin@imigishalink.rw
+2025-12-23T18:20:53.597+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T18:20:53.597+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] com.imigishalink.common.EmailService     : Email service configured. From: kamugishaaimaboy@gmail.com
+2025-12-23T18:20:53.597+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] com.imigishalink.common.EmailService     : Attempting to send email to: admin@imigishalink.rw
+2025-12-23T18:20:53.597+02:00 DEBUG 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] com.imigishalink.common.EmailService     : Email from: kamugishaaimaboy@gmail.com, subject: ImigishaLink Login OTP
+2025-12-23T18:21:08.985+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] com.imigishalink.common.EmailService     : ✓ Email sent successfully to: admin@imigishalink.rw
+2025-12-23T18:21:08.985+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] com.imigishalink.auth.LoginOTPService    : ✅ OTP email sent successfully to: admin@imigishalink.rw
+2025-12-23T18:21:08.985+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] com.imigishalink.auth.LoginOTPService    : Please check inbox and spam folder for the code.
+2025-12-23T18:21:08.985+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T18:21:23.692+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T18:21:23.693+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : 🔐 OTP CODE FOR kamugishaaimaboy@gmail.com: 926932
+2025-12-23T18:21:23.693+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T18:21:23.693+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : Code expires in 5 minutes.
+2025-12-23T18:21:23.693+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T18:21:23.693+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : 📧 SENDING OTP EMAIL TO: kamugishaaimaboy@gmail.com
+2025-12-23T18:21:23.693+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T18:21:23.693+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.common.EmailService     : Email service configured. From: kamugishaaimaboy@gmail.com
+2025-12-23T18:21:23.693+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.common.EmailService     : Attempting to send email to: kamugishaaimaboy@gmail.com
+2025-12-23T18:21:23.693+02:00 DEBUG 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.common.EmailService     : Email from: kamugishaaimaboy@gmail.com, subject: ImigishaLink Login OTP
+2025-12-23T18:21:41.353+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.common.EmailService     : ✓ Email sent successfully to: kamugishaaimaboy@gmail.com
+2025-12-23T18:21:41.366+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : ✅ OTP email sent successfully to: kamugishaaimaboy@gmail.com
+2025-12-23T18:21:41.366+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : Please check inbox and spam folder for the code.
+2025-12-23T18:21:41.366+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] com.imigishalink.auth.LoginOTPService    : ═══════════════════════════════════════════════════════════
+2025-12-23T18:23:14.329+02:00  INFO 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] com.imigishalink.auth.LoginOTPService    : ✅ OTP verified successfully for email: kamugishaaimaboy@gmail.com
+2025-12-23T18:23:18.421+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:23:18.440+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-10] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:29:25.508+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-2] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:29:25.531+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-1] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:29:27.689+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-6] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:29:27.703+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-4] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:29:33.179+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-8] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:29:33.194+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-3] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:29:38.469+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-7] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:29:38.482+02:00  WARN 5640 --- [imigishalink-backend] [http-nio-8080-exec-8] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2025-12-23T18:46:08.522+02:00  INFO 5640 --- [imigishalink-backend] [MessageBroker-4] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 8, active threads = 1, queued tasks = 0, completed tasks = 9]
+2025-12-23T20:03:22.677+02:00  WARN 5640 --- [imigishalink-backend] [HikariPool-30 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-30 - Thread starvation or clock leap detected (housekeeper delta=1h6m18s789ms771µs700ns).
